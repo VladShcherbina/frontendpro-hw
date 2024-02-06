@@ -17,6 +17,6 @@ function generateKey (length, characters) {
     return key
 }
 
-const key = generateKey (3,characters);
+const key = generateKey (15,characters);
 
 console.log(key)
