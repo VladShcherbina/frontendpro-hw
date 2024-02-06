@@ -55,12 +55,7 @@ const users = [
     }
     ]
 
-    const obj = {
-        id: 1,
-        name: 'b'
-    }
 
-    const { id } = obj;
 
     const normalStr = function(x) {
         return x.replace('$', "").replace( ',' , '');
@@ -73,6 +68,17 @@ const users = [
         }
     })
     console.log(arrey);
+
+    let sum = 0;
+    for(i = 0; i < users.length; i++) {
+        const CurrentUser = users[i]
+        const formatEtBalance = normalStr(CurrentUser.balance)
+        sum += +formatEtBalance
+    }
+
+    console.log(sum.toFixed(2));
+
+
   
    
 
