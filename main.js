@@ -1,14 +1,14 @@
-let firstElem = document.querySelector('.blok')
-let newElem = document.createElement('div')
+const firstElem = document.querySelector('.block')
+const newElem = document.createElement('div')
 newElem.textContent = 'InputFocus'
 
-document.querySelector('#myInput').addEventListener('focus', () => {
+const input = document.querySelector('#myInput')
+
+input.addEventListener('focus', () => {
     firstElem.appendChild(newElem)
 })
 
-
-
-document.querySelector('#myInput').addEventListener('blur', () => {
+input.addEventListener('blur', () => {
     firstElem.appendChild(newElem).remove()
 })
 
