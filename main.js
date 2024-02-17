@@ -2,7 +2,7 @@
 // let string2 = prompt('Введіть другу строку')
 // let string3 = prompt('Введіть третю строку')
 
-// alert(`${string1} ${string2} ${string3}`)
+// alert(`${string1 + " " + string2 + " " + string3}`)
 
 
 // function splitAndReverseNumber(number) {
@@ -14,10 +14,10 @@
 // }
 // splitAndReverseNumber(12345);
 
-let number = '12345';
-let newNumber = ' '
-for(let i = 0; i < number.length; i++) {
-    let result = Math.floor(number / 10000)
+// let number = '12345';
+// let newNumber = ' '
+// for(let i = 0; i < number.length; i++) {
+//     let result = Math.floor(number / 10000)
     
-    console.log(result)
-}
+//     console.log(result)
+// }
