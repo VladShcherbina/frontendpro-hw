@@ -14,10 +14,18 @@
 // }
 // splitAndReverseNumber(12345);
 
-// let number = '12345';
-// let newNumber = ' '
-// for(let i = 0; i < number.length; i++) {
-//     let result = Math.floor(number / 10000)
+// let number = 43254;
+
+// let myFn = function(number1) {
+//     let numberLength = number1.toString().length;
+//     let strNumber = number1.toString();
+//     let result = '';
+
+//     for(let i = 0; i < numberLength; i++) {
+//         result += `${Math.floor(strNumber / Math.pow(10, numberLength - i - 1))} `
+//         strNumber = strNumber.slice(1, strNumber.length);
+//     }
     
-//     console.log(result)
+//     return result.trim();    
 // }
+// console.log(myFn(number))
