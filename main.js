@@ -14,18 +14,22 @@ firstBtn.addEventListener('click', () => {
     if(imageIndex === 0){
         firstBtn.style.visibility = 'hidden'
     }
+    if(imageIndex < imageArray.length - 1) {
+        secondBtn.style.visibility = 'visible'
+    }
     })
     
 secondBtn.addEventListener('click', () => {
     if(imageIndex < imageArray.length - 1) {
         imageIndex++
         myImage.src = './image/' + imageArray[imageIndex]
-    }
+        }
     if(imageIndex === imageArray.length - 1){
         secondBtn.style.visibility = 'hidden'
-        
+        }
+    if(imageIndex > 0) {
+        firstBtn.style.visibility = 'visible'
     }
-   
     })
     
 
