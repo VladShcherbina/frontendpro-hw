@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 250px;
+}
+
+
+.firstBtn{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+}
+
+.secondBtn{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+    
+}
