@@ -24,7 +24,8 @@ smiles.forEach((smile) => {
     const wrapper = createDiv()
     const smileIkonDiv = createDiv()
     const voteCountDiv = createDiv()
-
+    wrapper.classList.add('wrapperDiv')
+    smileIkonDiv.classList.add('smileDiv')
     smileIkonDiv.textContent = `${smile.smileIkon}`
     voteCountDiv.textContent = `${smile.voteCount}`
 
