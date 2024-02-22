@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-row{
+
+}
+
+.todo_list{
+    display: flex;
+    flex-direction: column;
+}
+
+.todo{
+    margin-top: 5px;
+}
