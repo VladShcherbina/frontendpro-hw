@@ -10,12 +10,22 @@ function updateTodoList() {
     todo_wrapper.innerHTML = '';
     localStorage.setItem('todo_list', JSON.stringify(todo_list))
     
-    todo_list.forEach(todo => {
+    todo_list.forEach((todo) => {
         const temp_todo = document.createElement('div');
         temp_todo.textContent = todo.title;
         temp_todo.classList.add('todo');
         
         todo_wrapper.appendChild(temp_todo)
+
+        temp_todo.addEventListener('click', () => {
+            console.log(temp_todo.style.textDecoration === 'line-through')
+            if (temp_todo.style.textDecoration === 'line-through') {
+                temp_todo.style.textDecoration = 'none'
+            } else {
+                temp_todo.style.textDecoration = 'line-through'
+                todo.complete === true
+            }
+        })
     })
 }
 
