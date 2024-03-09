@@ -1,6 +1,7 @@
 *{
     font-size: 25px;
     list-style: none;
+    background-color:blanchedalmond
 }
 
 .title{
@@ -22,4 +23,19 @@
     display: flex;
     flex-direction: column; 
     gap: 20px;
+    justify-content: center;
+    align-items:center
+}
+li{
+    cursor: pointer;
+}
+p{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+    background-color: red;
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
 }
