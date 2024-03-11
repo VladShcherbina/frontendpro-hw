@@ -1,0 +1,29 @@
+*{
+    background-color: blanchedalmond;
+}
+
+/* .flexWrapper{
+    display: flex;
+} */
+
+.pComments {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#searchBtn {
+    cursor: pointer;
+    background-color: red;
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+}
+.searchBtn {
+    cursor: pointer;
+    background-color: red;
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+}
