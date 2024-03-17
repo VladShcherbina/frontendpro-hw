@@ -5,7 +5,6 @@ function getDate() {
     fetch('http://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=5d066958a60d315387d9492393935c19')
     .then(response => response.json())
     .then(json => {
-        console.log(json)
         renderInfo(json)
     })
 }
@@ -29,7 +28,7 @@ function renderInfo(el) {
         infoDescription.textContent = `Description : ${el.weather[0].description}`
         infoHumidity.textContent = `Humidity : ${el.main.humidity}`
         infoSpeed.textContent = `Speed : ${el.wind.speed}`
-        infoDeg.textContent = `Deg : ${el.wind.deg}`
+        infoDeg.textContent = `Deg : ${el.wind.deg}°`
         wrapper.appendChild(infoXXX)
         wrapper.appendChild(infoTemp)
         wrapper.appendChild(infoPressure)

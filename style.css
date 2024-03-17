@@ -1,3 +1,6 @@
+*{
+    background-color: blanchedalmond;
+}
 #getBtn {
     cursor: pointer;
     background-color: red;
