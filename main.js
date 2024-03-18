@@ -148,28 +148,28 @@ computersP.addEventListener('click', () => {
                     const comment = document.createElement('p')
                     const payment = document.createElement('p')
                     const okeyBtn = document.createElement('button')
+                    let paymentMethod
+
+                    radioButtons.forEach(el => {
+                        if (el.checked) {
+                            paymentMethod = el.value
+                        }
+                    })
                     
                     if(myInputPib.value === '' || myInputCity.value === '') {
                         alert("Заповніть обов'язкове поле")
                     } else{
-                        // radioButtons.forEach((el) => {
-                        //     el.addEventListener('change', () => {
-                        //         if (el.checked) {
-                        //             payment.textContent =`Оплата: ${el.value}`
-                        //             infoBuy.appendChild(payment)
-                        //         }
-                        //     });
-                        // })
-                        // payment.textContent = `Cпосіб оплати: ${radioButtons.input.value}`
                         pib.textContent = `${myInputPib.value}, Дякуємо за замовлення`
                         city.textContent =`Місто: ${myInputCity.value}`
                         novaPochta.textContent =`Відділення нової почти номер: ${myInputNovaPochta.value}`
+                        payment.textContent = `Спосіб оплати: ${paymentMethod}`
                         quantity.textContent =`Кількість товару: ${myInputQuantity.value} `
                         comment.textContent =`Наш менеджер зв'яжеться з вами найблищим часом`
                         okeyBtn.textContent = 'Все вірно'
                         infoBuy.appendChild(pib)
                         infoBuy.appendChild(city)
                         infoBuy.appendChild(novaPochta)
+                        infoBuy.appendChild(payment)
                         infoBuy.appendChild(quantity)
                         infoBuy.appendChild(payment)
                         infoBuy.appendChild(comment)
