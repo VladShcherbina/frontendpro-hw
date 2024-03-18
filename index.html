@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="flexWrapper">
+    <div id="wrapper">
+        <h1 class="title">Інтернет Магазин</h1>
+        <div id="shop">
+        <div id="categories">
+            <p id="fruits">Fruits</p>
+            <p id="cars">Cars</p>
+            <p id="computers">Computers</p>
+        </div>
+        <ul id="tovar"></ul>
+        <ul id="info"></ul>
+    </div>
+    </div>
+
+    <div id="listInfo">
+        <div id="listInput">
+            <input id="myInputPib" type="text" placeholder="ПІБ(Обов'язкове поле)">
+            <input id="myInputCity" type="text" placeholder="Місто(Обов'язкове поле)">
+            <input id="myInputNovaPochta" type="text" placeholder="Склад Нової пошти">
+            <input id="myInputQuantity" type="text" placeholder="Кількість продукції, що купується">
+            <input id="myInputComment" type="text" placeholder="Коментар до замовлення">
+            
+        </div>
+        <div id="checkBox">
+            <div>
+                <input type="radio" id="huey" name="payment" value="Оплата картою" checked />
+                <label for="Оплата картою">Оплата картою</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="dewey" name="payment" value="Післяплата" />
+                <label for="Післяплата">Післяплата</label>
+            </div>
+        </div>
+        <button id="listBnt">Відправить</button>
+    </div>
+    <div id="infoBuy">
+
+    </div>
+</div>
     
+    <script src="./main.js"></script>
 </body>
 </html>

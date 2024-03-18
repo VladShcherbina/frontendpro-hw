@@ -1,0 +1,73 @@
+*{
+    font-size: 25px;
+    list-style: none;
+    background-color:blanchedalmond
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+
+#shop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#tovar{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+#info{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    justify-content: center;
+    align-items:center
+}
+li{
+    cursor: pointer;
+}
+p{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+    background-color: red;
+    width: 230px;
+    height: 50px;
+    border-radius: 20px;
+}
+#listInfo {
+    display: flex;
+    /* flex-direction: column; */
+    visibility: hidden;
+    justify-content: center;
+    align-items:center;
+    gap: 30px
+}
+#listInput {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+#infoBuy {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items:center; */
+    
+}
+#checkBox{
+display: flex;
+flex-direction: column;
+}
+span {
+    border: 1px solid black;
+}
+.flexWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
