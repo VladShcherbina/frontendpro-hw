@@ -27,18 +27,19 @@ function renderInfo() {
     }
 
 
-    if(placeInput.value === 'Київ') {
-        place.textContent = 'Ти живеш в столиці України'
-    } else if(placeInput.value === 'Вашингтон') {
-        place.textContent = 'Ти живеш в столиці Америки'
-    } else if(placeInput.value === 'Лондон') {
-        place.textContent = 'Ти живеш в столиці Англії'
-    } 
-    else if(placeInput.value === '') {
+    if(placeInput.value === '') {
         place.textContent = 'Шкода, що ти не вказав місто'
     }
      else {
-        place.textContent = `Ти живеш у місті ${placeInput.value}`
+        if(placeInput.value.toLowerCase() === 'київ') {
+            place.textContent = 'Ти живеш в столиці України'
+        } else if(placeInput.value.toLowerCase() === 'вашингтон') {
+            place.textContent = 'Ти живеш в столиці Америки'
+        } else if(placeInput.value.toLowerCase() === 'лондон') {
+            place.textContent = 'Ти живеш в столиці Англії'
+        } else {
+            place.textContent = `Ти живеш у місті ${placeInput.value}`
+        }
     }
 
     let sportType
