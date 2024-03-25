@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <div id="wrapper">
+        <div id="wrapper_list">
+            <input id="age" class="myInput" type="number" placeholder="Вкажіть ваш вік">
+            <input id="place" class="myInput" type="text" placeholder="Вкажіть ваше місто">
+        </div>
+        <div id="checkBox">
+            <div>
+                <input type="radio" id="box" name="sport" value="Бокс" checked />
+                <label for="Бокс">Бокс</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="football" name="sport" value="Футбол" />
+                <label for="Футбол">Футбол</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="tenis" name="sport" value="Теніс" />
+                <label for="Теніс">Теніс</label>
+            </div>
+        </div>
+        <button id="listBnt">Відправить</button>
+        <div id="render"></div>
+    </div>
     
+
+    <script src="./main.js"></script>
 </body>
 </html>

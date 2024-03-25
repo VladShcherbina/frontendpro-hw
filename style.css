@@ -1,0 +1,21 @@
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#wrapper_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 10%;
+
+}
+
+#listBnt{
+    width: 10%;
+    cursor: pointer;
+    background-color: red;
+    height: 30px;
+    border-radius: 20px;
+}
